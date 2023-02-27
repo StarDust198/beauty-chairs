@@ -65,6 +65,7 @@
   .details {
     &__grid {
       &-card {
+        padding: 1.75rem;
         text-align: center;
         grid-template-columns: 1fr;
         place-items: center;
@@ -72,8 +73,6 @@
           display: none;
         }
       }
-      // padding-inline: 2rem;
-      // grid-template-columns: 1fr;
     }
   }
 }

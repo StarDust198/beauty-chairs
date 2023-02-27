@@ -79,3 +79,11 @@
     }
   }
 }
+
+@media (max-width: $md4+px) {
+  .intro {
+    .fs90 {
+      font-size: 2.5rem;
+    }
+  }
+}
