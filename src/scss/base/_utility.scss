@@ -1,0 +1,82 @@
+@import 'variables';
+
+// Fonts
+.fs90 {
+  font-size: $fs90;
+}
+.fs80 {
+  font-size: $fs80;
+}
+.fs70 {
+  font-size: $fs70;
+}
+.fs60 {
+  font-size: $fs60;
+}
+.fs50 {
+  font-size: $fs50;
+}
+.fs40 {
+  font-size: $fs40;
+}
+.fs30 {
+  font-size: $fs30;
+}
+.fs20 {
+  font-size: $fs20;
+}
+.lh2 {
+  line-height: 1.44;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-white {
+  color: $white;
+}
+.text-gray {
+  color: $gray;
+}
+.text-green {
+  color: $green;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+
+// Layout
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.d-block {
+  display: block;
+}
+.items-center {
+  align-items: center;
+}
+.gap20 {
+  gap: 1.25rem;
+}
+.gap30 {
+  gap: 1.875rem;
+}
+.gap40 {
+  gap: 2.5rem;
+}
+
+// Background
+.bg-green {
+  background-color: $green;
+}
+.bg-white {
+  background-color: $white;
+}
+.bg-gray {
+  background-color: $gray;
+}

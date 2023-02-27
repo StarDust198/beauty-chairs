@@ -1,0 +1,22 @@
+.header {
+  &__row {
+    &_upper {
+      padding-block: 1rem;
+    }
+    &_middle {
+      padding-block: 1.25rem;
+    }
+    &_bottom {
+      padding-block: 1.875rem;
+    }
+  }
+  &__logo {
+    flex-grow: 1;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

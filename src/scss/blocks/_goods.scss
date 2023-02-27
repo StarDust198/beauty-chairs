@@ -1,0 +1,20 @@
+@import '../base/variables';
+
+.goods {
+  padding-top: 5rem;
+  &__grid {
+    margin-top: 2.25rem;
+    grid-template-columns: repeat(auto-fit, 15.875rem);
+    &-card {
+      background-color: $white;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+      &-descr {
+        text-align: center;
+      }
+    }
+  }
+}

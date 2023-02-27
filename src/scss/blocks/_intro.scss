@@ -1,0 +1,49 @@
+@import '../base/variables';
+
+.intro {
+  // min-height: 37.75rem;
+  overflow: hidden;
+  &__grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  &__description {
+    margin-top: 3rem;
+  }
+  &__btn {
+    margin-top: 3rem;
+  }
+  &__block {
+    align-self: center;
+  }
+  &__image {
+    justify-self: center;
+    position: relative;
+    height: 100%;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+    &::before {
+      background-color: rgba(255, 255, 255, 0.4);
+      height: 116%;
+    }
+    &::after {
+      background-color: rgba(255, 255, 255, 0.3);
+      height: 148%;
+    }
+    &:hover::after {
+      height: 155%;
+    }
+    & img {
+      position: relative;
+      z-index: 5;
+    }
+  }
+}

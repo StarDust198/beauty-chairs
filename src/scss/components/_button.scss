@@ -1,0 +1,34 @@
+@import '../base/variables';
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  cursor: pointer;
+  color: $black;
+  background-color: transparent;
+  border: 2px solid $green;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+  &_small {
+    padding-block: 0.5rem;
+  }
+  &_outline-white {
+    border: 2px solid $white;
+    color: $white;
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+  }
+  &_green {
+    background-color: $green;
+    color: $white;
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+}

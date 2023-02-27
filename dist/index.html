@@ -1,21 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>Beauty Chairs</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Beauty Chairs</title>
 </head>
+
   <body>
-    <header>Header</header>
+    <header class="header">
+  <div class="header__row header__row_upper">
+    <div class="container">
+      <nav class="header__menu">
+        <ul class="nav-menu gap30 fs30">
+          <li class="nav-menu__item"><a href="#">Доставка</a></li>
+          <li class="nav-menu__item"><a href="#">Оплата</a></li>
+          <li class="nav-menu__item"><a href="#">Отзывы</a></li>
+          <li class="nav-menu__item"><a href="#">Вопрос-ответ</a></li>
+          <li class="nav-menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__row header__row_middle bg-white">
+    <div class="container">
+      <div class="header__title flex gap40 items-center">
+        <div class="header__logo logo flex gap20 items-center">
+          <img src="img/logo.svg" alt="Logo" />
+          <h3 class="uppercase fs80 font-bold text-green">Beauty</h3>
+        </div>
+        <div class="header__phone">8 (812) 123-45-67</div>
+        <button class="header__btn btn btn_outline fs30">
+          Обратный звонок
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__row header__row_bottom bg-white">
+    <div class="container">
+      <ul class="nav-menu gap40">
+        <li class="nav-menu__item">Парикмахерская</li>
+        <li class="nav-menu__item">Барбершоп</li>
+        <li class="nav-menu__item">Маникюр</li>
+        <li class="nav-menu__item">Педикюр</li>
+        <li class="nav-menu__item">Массаж</li>
+        <li class="nav-menu__item">Мебель</li>
+      </ul>
+    </div>
+  </div>
+</header>
 
     <main>
-      <h1>Hello World!</h1>
+      <div class="intro bg-green">
+  <div class="container">
+    <div class="grid intro__grid">
+      <div class="intro__block">
+        <h1 class="intro__title text-white font-bold fs90">Супер кресло</h1>
+        <p class="intro__description text-white fs30 lh2">
+          Текст акции всегда отражает суть, а не просто болтовню, поэтому
+          внимательнее
+        </p>
+        <button class="intro__btn btn btn_outline-white fs30">Подробнее</button>
+      </div>
+      <div class="intro__image">
+        <img src="img/mainchair.png" alt="The best chair" />
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="goods">
+  <div class="container">
+    <div class="goods__title font-bold fs70">Специальные предложения</div>
+    <ul class="goods__grid grid gap30">
+      <li class="goods__grid-card">
+        <img
+          src="img/greenchair.png"
+          alt="Chair image"
+          class="goods__grid-card-image"
+        />
+        <div class="goods__grid-card-descr fs30">
+          Парикмахерское кресло «Норм» гидравлическое
+        </div>
+        <div class="goods__grid-card-price font-bold fs60">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green fs30">Купить</button>
+      </li>
+      <li class="goods__grid-card">
+        <img
+          src="img/greenchair.png"
+          alt="Chair image"
+          class="goods__grid-card-image"
+        />
+        <div class="goods__grid-card-descr">
+          Парикмахерское кресло «Норм» гидравлическое
+        </div>
+        <div class="goods__grid-card-price">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+      </li>
+      <li class="goods__grid-card">
+        <img
+          src="img/greenchair.png"
+          alt="Chair image"
+          class="goods__grid-card-image"
+        />
+        <div class="goods__grid-card-descr">
+          Парикмахерское кресло «Норм» гидравлическое
+        </div>
+        <div class="goods__grid-card-price">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+      </li>
+      <li class="goods__grid-card">
+        <img
+          src="img/greenchair.png"
+          alt="Chair image"
+          class="goods__grid-card-image"
+        />
+        <div class="goods__grid-card-descr">
+          Парикмахерское кресло «Норм» гидравлическое
+        </div>
+        <div class="goods__grid-card-price">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <h3>details</h3>
+
     </main>
     <footer>
-	<h3>Footer</h3>
+  <div class="container">
+    <h3>Footer</h3>
+  </div>
 </footer>
+
     <script src="js/app.min.js"></script>
   </body>
 </html>

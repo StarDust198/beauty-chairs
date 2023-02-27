@@ -1,0 +1,30 @@
+// Sizes
+$minwidth: 320px;
+$maxwidth: 1152;
+$maxWidthContainer: 1110;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// Fonts
+$fontFamily: 'Roboto';
+
+// Font sizes
+$fs90: 3rem;
+$fs80: 2.25rem;
+$fs70: 1.5rem;
+$fs60: 1.25rem;
+$fs50: 1.125rem;
+$fs40: 1rem;
+$fs30: 0.875rem;
+$fs20: 0.75rem;
+
+// Colors
+$green: #66c05d;
+$green-light: #8dc088;
+$gray: #efefef;
+$dark: #333;
+$black: #000;
+$white: #fff;
+$white-hsl: 0 0% 100%;
