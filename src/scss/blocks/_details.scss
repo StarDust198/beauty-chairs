@@ -1,0 +1,79 @@
+@import '../base/variables';
+
+.details {
+  margin-top: 6.25rem;
+  &__grid {
+    grid-template-columns: repeat(2, 1fr);
+    &-card {
+      padding: 2.25rem 2.5rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      & > * :not(:first-child) {
+        margin-top: 1.5rem;
+      }
+      &-descr {
+        max-width: 35ch;
+      }
+      &-input {
+        border: none;
+        border-radius: 2rem;
+        padding: 0.5rem 1.5rem;
+        &::placeholder {
+          color: $gray-light;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md2+px) {
+  .details {
+    &__grid {
+      &-card {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 2rem;
+        &-image {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md3+px) {
+  .details {
+    &__grid {
+      grid-template-columns: 1fr;
+      &-card {
+        grid-template-columns: 2fr 1fr;
+        // place-items: center;
+        &-image {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md4+px) {
+  .details {
+    &__grid {
+      &-card {
+        text-align: center;
+        grid-template-columns: 1fr;
+        place-items: center;
+        &-image {
+          display: none;
+        }
+      }
+      // padding-inline: 2rem;
+      // grid-template-columns: 1fr;
+    }
+  }
+}

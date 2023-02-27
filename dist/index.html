@@ -26,38 +26,44 @@
   </div>
   <div class="header__row header__row_middle bg-white">
     <div class="container">
-      <div class="header__title flex gap40 items-center">
-        <div class="header__logo logo flex gap20 items-center">
+      <div class="header__main items-center">
+        <div class="header__logo">
           <img src="img/logo.svg" alt="Logo" />
-          <h3 class="uppercase fs80 font-bold text-green">Beauty</h3>
+          <h3 class="header__title uppercase fs80 font-bold text-green">
+            Beauty
+          </h3>
         </div>
-        <div class="header__phone">8 (812) 123-45-67</div>
-        <button class="header__btn btn btn_outline fs30">
-          Обратный звонок
-        </button>
+        <div class="header__contacts">
+          <div class="header__phone">8 (812) 123-45-67</div>
+          <button class="header__btn btn btn_outline fs30">
+            Обратный звонок
+          </button>
+        </div>
       </div>
     </div>
   </div>
   <div class="header__row header__row_bottom bg-white">
     <div class="container">
       <ul class="nav-menu gap40">
-        <li class="nav-menu__item">Парикмахерская</li>
-        <li class="nav-menu__item">Барбершоп</li>
-        <li class="nav-menu__item">Маникюр</li>
-        <li class="nav-menu__item">Педикюр</li>
-        <li class="nav-menu__item">Массаж</li>
-        <li class="nav-menu__item">Мебель</li>
+        <li class="nav-menu__item"><a href="#">Парикмахерская</a></li>
+        <li class="nav-menu__item"><a href="#">Барбершоп</a></li>
+        <li class="nav-menu__item"><a href="#">Маникюр</a></li>
+        <li class="nav-menu__item"><a href="#">Педикюр</a></li>
+        <li class="nav-menu__item"><a href="#">Массаж</a></li>
+        <li class="nav-menu__item"><a href="#">Мебель</a></li>
       </ul>
     </div>
   </div>
 </header>
 
     <main>
-      <div class="intro bg-green">
+      <section class="intro bg-green">
   <div class="container">
     <div class="grid intro__grid">
       <div class="intro__block">
-        <h1 class="intro__title text-white font-bold fs90">Супер кресло</h1>
+        <h1 class="intro__title text-white font-bold fs90">
+          Супер&nbsp;кресло
+        </h1>
         <p class="intro__description text-white fs30 lh2">
           Текст акции всегда отражает суть, а не просто болтовню, поэтому
           внимательнее
@@ -69,8 +75,8 @@
       </div>
     </div>
   </div>
-</div>
- <div class="goods">
+</section>
+ <section class="goods">
   <div class="container">
     <div class="goods__title font-bold fs70">Специальные предложения</div>
     <ul class="goods__grid grid gap30">
@@ -92,11 +98,11 @@
           alt="Chair image"
           class="goods__grid-card-image"
         />
-        <div class="goods__grid-card-descr">
+        <div class="goods__grid-card-descr fs30">
           Парикмахерское кресло «Норм» гидравлическое
         </div>
-        <div class="goods__grid-card-price">9 900 ₽</div>
-        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+        <div class="goods__grid-card-price font-bold fs60">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green fs30">Купить</button>
       </li>
       <li class="goods__grid-card">
         <img
@@ -104,11 +110,11 @@
           alt="Chair image"
           class="goods__grid-card-image"
         />
-        <div class="goods__grid-card-descr">
+        <div class="goods__grid-card-descr fs30">
           Парикмахерское кресло «Норм» гидравлическое
         </div>
-        <div class="goods__grid-card-price">9 900 ₽</div>
-        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+        <div class="goods__grid-card-price font-bold fs60">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green fs30">Купить</button>
       </li>
       <li class="goods__grid-card">
         <img
@@ -116,22 +122,99 @@
           alt="Chair image"
           class="goods__grid-card-image"
         />
-        <div class="goods__grid-card-descr">
+        <div class="goods__grid-card-descr fs30">
           Парикмахерское кресло «Норм» гидравлическое
         </div>
-        <div class="goods__grid-card-price">9 900 ₽</div>
-        <button class="goods__grid-card-btn btn btn_green">Купить</button>
+        <div class="goods__grid-card-price font-bold fs60">9 900 ₽</div>
+        <button class="goods__grid-card-btn btn btn_green fs30">Купить</button>
       </li>
     </ul>
   </div>
-</div>
+</section>
 
-      <h3>details</h3>
+      <section class="details">
+  <div class="container">
+    <div class="details__grid grid gap30">
+      <div class="details__grid-card bg-green text-white">
+        <div class="details__grid-card-row">
+          <h3 class="details__grid-card-title fs50 font-bold">
+            Получайте бонусы и подарки
+          </h3>
+          <p class="details__grid-card-descr fs30 lh2">
+            Каждый месяц разыгрываем 10 000 рублей для наших клиентов
+          </p>
+          <input
+            class="details__grid-card-input fs30"
+            type="e-mail"
+            placeholder="Введите e-mail"
+          />
+        </div>
+        <!-- <div class="details__grid-card-row"> -->
+        <img
+          class="details__grid-card-image"
+          src="img/message.png"
+          alt="Сообщение"
+        />
+        <!-- </div> -->
+      </div>
+      <div class="details__grid-card bg-green text-white">
+        <div class="details__grid-card-row">
+          <h3 class="details__grid-card-title fs50 font-bold">
+            Заходите к нам
+          </h3>
+          <p class="details__grid-card-descr fs30 lh2">
+            Более 300 магазинов<br />по всей России
+          </p>
+          <button
+            class="details__grid-card-btn btn btn_outline-white btn_small fs30"
+          >
+            Карта магазинов
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
-    <footer>
-  <div class="container">
-    <h3>Footer</h3>
+    <footer class="footer">
+  <div class="footer__row footer__row_upper bg-white">
+    <div class="container">
+      <div class="footer__main items-center">
+        <div class="footer__icons items-center">
+          <a class="footer__icon icon">
+            <img src="img/icons/youtube.svg" alt="youtube" />
+          </a>
+          <a class="footer__icon icon">
+            <img src="img/icons/vk.svg" alt="vkontakte" />
+          </a>
+          <a class="footer__icon icon">
+            <img src="img/icons/facebook.svg" alt="facebook" />
+          </a>
+          <a class="footer__icon icon">
+            <img src="img/icons/instagram.svg" alt="instagram" />
+          </a>
+        </div>
+        <div class="footer__address fs30">
+          198555, Невский пр. 140, офис 140
+        </div>
+        <div class="footer__phone">8 (812) 123-45-67</div>
+        <button class="footer__btn btn btn_outline fs30">
+          Обратный звонок
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__row footer__row_bottom">
+    <div class="container">
+      <div class="footer__end fs20">
+        <div class="footer__end-copyright">
+          Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
+          оборудования для салонов красоты
+        </div>
+        <a href="#" class="footer__end-policy">Политика конфиденциальности</a>
+      </div>
+    </div>
   </div>
 </footer>
 

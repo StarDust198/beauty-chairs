@@ -1,0 +1,57 @@
+@import '../base/variables';
+
+.footer {
+  margin-top: 8.25rem;
+  &__row {
+    &_upper {
+      padding-block: 2.25rem;
+    }
+    &_bottom {
+      padding-block: 1.5rem;
+      color: $gray-dark;
+      & > * :first-child {
+        flex-grow: 1;
+      }
+    }
+  }
+  &__main {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+  }
+  &__icons {
+    display: flex;
+    gap: 1.25rem;
+  }
+  &__end {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: $md2+px) {
+  .footer {
+    &__main {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: $md4+px) {
+  .footer {
+    &__end {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      &-policy {
+        order: -1;
+      }
+    }
+  }
+}

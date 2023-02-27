@@ -10,13 +10,41 @@
       padding-block: 1.875rem;
     }
   }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 2.5rem;
+  }
   &__logo {
-    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
   }
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+@media (max-width: $md3+px) {
+  .header {
+    &__title {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $md4+px) {
+  .header {
+    &__main {
+      justify-items: center;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+    }
+    &__title {
+      display: block;
+    }
+  }
 }

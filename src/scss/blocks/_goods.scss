@@ -1,10 +1,10 @@
 @import '../base/variables';
 
 .goods {
-  padding-top: 5rem;
+  margin-top: 5rem;
   &__grid {
     margin-top: 2.25rem;
-    grid-template-columns: repeat(auto-fit, 15.875rem);
+    grid-template-columns: repeat(4, 1fr);
     &-card {
       background-color: $white;
       padding: 1.5rem;
@@ -15,6 +15,35 @@
       &-descr {
         text-align: center;
       }
+    }
+  }
+}
+
+@media (max-width: $md2+px) {
+  .goods {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: $md3+px) {
+  .goods {
+    &__title {
+      text-align: center;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: $md4+px) {
+  .goods {
+    &__grid {
+      padding-inline: 5vw;
+      grid-template-columns: 1fr;
     }
   }
 }

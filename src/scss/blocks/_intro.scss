@@ -1,19 +1,23 @@
 @import '../base/variables';
 
 .intro {
-  // min-height: 37.75rem;
   overflow: hidden;
   &__grid {
     grid-template-columns: 1fr 2fr;
-  }
-  &__description {
-    margin-top: 3rem;
-  }
-  &__btn {
-    margin-top: 3rem;
+    gap: 3rem;
   }
   &__block {
     align-self: center;
+    & > *:not(:first-child) {
+      margin-top: 3rem;
+    }
+  }
+  &__description {
+    max-width: 40ch;
+  }
+  &__btn {
+    position: relative;
+    z-index: 5;
   }
   &__image {
     justify-self: center;
@@ -44,6 +48,34 @@
     & img {
       position: relative;
       z-index: 5;
+    }
+  }
+}
+
+@media (max-width: $md1+px) {
+  .intro {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: $md3+px) {
+  .intro {
+    &__grid {
+      padding-block: 5rem;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      justify-content: center;
+    }
+    &__block {
+      text-align: center;
+      & > *:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+    &__image {
+      width: 70%;
     }
   }
 }

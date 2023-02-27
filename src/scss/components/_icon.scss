@@ -1,0 +1,16 @@
+@import '../base/variables';
+
+.icon {
+  cursor: pointer;
+  border: 2px solid $green;
+  border-radius: 50%;
+  height: 2.75rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

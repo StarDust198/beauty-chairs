@@ -2,7 +2,7 @@
 $minwidth: 320px;
 $maxwidth: 1152;
 $maxWidthContainer: 1110;
-$md1: $maxWidthContainer + 12;
+$md1: $maxWidthContainer + 42;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -22,9 +22,10 @@ $fs20: 0.75rem;
 
 // Colors
 $green: #66c05d;
-$green-light: #8dc088;
+$green-light: #92d38c;
 $gray: #efefef;
+$gray-light: #c4c4c4;
+$gray-dark: #828282;
 $dark: #333;
 $black: #000;
 $white: #fff;
-$white-hsl: 0 0% 100%;
