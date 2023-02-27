@@ -44,11 +44,13 @@
 
 @media (max-width: $md4+px) {
   .footer {
+    margin-top: 4rem;
     &__end {
       display: grid;
       justify-content: center;
       justify-items: center;
       text-align: center;
+      gap: 1.25rem;
       &-policy {
         order: -1;
       }

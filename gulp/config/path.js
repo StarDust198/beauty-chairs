@@ -20,7 +20,6 @@ export const path = {
     scss: `${srcFolder}/scss/style.scss`,
     html: `${srcFolder}/*.html`,
     files: `${srcFolder}/files/**/*.*`,
-    svgicons: `${srcFolder}/svgIcons/*.svg`,
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
@@ -33,5 +32,4 @@ export const path = {
   buildFolder,
   srcFolder,
   rootFolder,
-  ftp: ``,
 };

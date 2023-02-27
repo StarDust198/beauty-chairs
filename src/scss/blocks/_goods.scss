@@ -41,6 +41,7 @@
 
 @media (max-width: $md4+px) {
   .goods {
+    margin-top: 3.5rem;
     &__grid {
       padding-inline: 5vw;
       grid-template-columns: 1fr;

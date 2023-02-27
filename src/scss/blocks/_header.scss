@@ -26,6 +26,9 @@
     align-items: center;
     gap: 1.25rem;
   }
+  &__hr {
+    display: none;
+  }
 }
 
 @media (max-width: $md3+px) {
@@ -38,6 +41,11 @@
 
 @media (max-width: $md4+px) {
   .header {
+    &__row {
+      &_middle {
+        padding-block: 2rem;
+      }
+    }
     &__main {
       justify-items: center;
       gap: 1.5rem;
@@ -45,6 +53,16 @@
     }
     &__title {
       display: block;
+    }
+    &__contacts {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    &__hr {
+      display: block;
+      margin: 0;
+      color: $gray;
+      border: 1px solid $gray;
     }
   }
 }
