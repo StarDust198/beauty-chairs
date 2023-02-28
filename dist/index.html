@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230301012737" />
   <title>Beauty Chairs</title>
 </head>
 
@@ -14,13 +14,20 @@
   <div class="header__row header__row_upper">
     <div class="container">
       <nav class="header__menu">
-        <ul class="nav-menu gap30 fs30">
+        <ul class="header__nav-menu nav-menu gap30 fs30">
           <li class="nav-menu__item"><a href="#">Доставка</a></li>
           <li class="nav-menu__item"><a href="#">Оплата</a></li>
           <li class="nav-menu__item"><a href="#">Отзывы</a></li>
           <li class="nav-menu__item"><a href="#">Вопрос-ответ</a></li>
           <li class="nav-menu__item"><a href="#">Контакты</a></li>
         </ul>
+        <button class="header__menu-btn">
+          <img
+            class="header__menu-btn-icon"
+            src="img/icons/burger.svg"
+            alt="Открыть меню"
+          />
+        </button>
       </nav>
     </div>
   </div>
@@ -72,7 +79,7 @@
         <button class="intro__btn btn btn_outline-white fs30">Подробнее</button>
       </div>
       <div class="intro__image">
-        <img src="img/mainchair.png" alt="The best chair" />
+        <picture><source srcset="img/mainchair.webp" type="image/webp"><img src="img/mainchair.png" alt="The best chair" /></picture>
       </div>
     </div>
   </div>
@@ -178,6 +185,7 @@
 </section>
 
     </main>
+    <div class="modal d-none"></div>
     <footer class="footer">
   <div class="footer__row footer__row_upper bg-white">
     <div class="container">
@@ -219,6 +227,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20230301012737"></script>
   </body>
 </html>

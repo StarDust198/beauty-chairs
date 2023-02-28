@@ -11,6 +11,9 @@
     }
   }
 
+  &__menu-btn {
+    display: none;
+  }
   &__main {
     display: grid;
     grid-template-columns: 1fr auto auto;
@@ -44,6 +47,35 @@
     &__row {
       &_middle {
         padding-block: 2rem;
+      }
+    }
+    &__menu-btn {
+      display: block;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 15;
+    }
+    &__menu {
+      display: flex;
+      justify-content: end;
+      & > .nav-menu {
+        justify-content: start;
+        transition: 0.5s right ease-in-out;
+        position: fixed;
+        width: 67%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        right: -67%;
+        z-index: 10;
+        background-color: $gray;
+        text-transform: uppercase;
+        padding: 20vh 3rem;
+        flex-direction: column;
+        gap: 3rem;
       }
     }
     &__main {

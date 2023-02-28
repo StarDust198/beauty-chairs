@@ -27,6 +27,17 @@ body {
   }
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background: $dark;
+  opacity: 0.5;
+}
+
 @import 'components/button.scss';
 @import 'components/icon.scss';
 @import 'components/navmenu.scss';
